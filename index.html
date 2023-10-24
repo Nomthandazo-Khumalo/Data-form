@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2 id="change">Admission to UNISA Application</h2>
+    </head>
+    <body style="background-color: rgb(173, 211, 245);">
+      
+        <h1> Student Data Form</h1>
+        
+        <form action="/action_page.php">
+         <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="Answers">First name:*</label>
+            <select name="numeric" id="numeric">
+		    <option value="Ms">Ms</option>
+		    <option value="Mr">Mr</option>
+			<option value="Dr">Dr</option>
+			<option value="Mrs">Mrs</option><br><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:*</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:*</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="email">Mobile Number:*</label>
+            <input type="text" id="Mnumber" name="Mnumber"><br><br>
+            <label for="Date of Birth">Date of Birth:*</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+           
+            <Address> 
+                <label for="email">Home Address:*</label>
+                <input type="text" id="Mnumber" name="Mnumber"><br><br>
+        </Address>
+         </fieldset>
+         <hr></hr>
+         <fieldset>
+            <legend>Academic Information:</legend>
+            <label for="Hqaulification">Highest Qualification Held*</label>
+            <select name="numeric" id="numeric">
+		    <option value="Ms">Grade 12 (National Senior Certificate) and National (vocational) Cert. level 4</option>
+		    <option value="Mr">Higher Certificates and Advanced National (vocational) Cert.</option>
+			<option value="Dr">National Diploma and Advanced certificates</option>
+			<option value="Mrs">Master's degree</option><br><br></select><br><br>
+    
+            <label for="">Institution Obtained:*</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Year Obtained:*</label>
+            <input type="year" id="year" name="year"><br><br>
+           </fieldset>
+           <hr></hr>
+           <fieldset>
+            <legend>Attachment Information:</legend>
+        <form action="/action_page.php">
+            <p>Identity Document:*</p>
+            <input type="file" id="myFile" name="filename">
+            <p>National Senior Certificate:*</p>
+            <input type="file" id="myFile" name="filename">
+            <p>Statement of Credits:*</p>
+            <input type="file" id="myFile" name="filename"><br><br>
+        </fieldset>
+        </form>
+        </form>
+        <button onclick="myFunction()">Submit</button>
+        <script>
+            function myFunction(){
+                document.getElementById("change").innerHTML ="Thanks for your application, submit another response"
+            }
+        </script>
+    </body>
+</html>
